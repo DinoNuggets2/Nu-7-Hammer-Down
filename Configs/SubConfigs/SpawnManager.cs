@@ -1,59 +1,59 @@
-﻿namespace UIURescueSquad.Configs.SubConfigs
+namespace UIURescueSquad.Configs.SubConfigs
 {
     using System.ComponentModel;
     using UnityEngine;
 
     /// <summary>
-    /// Configs for UIU spawning options.
+    /// Configs for Nu-7 spawning options.
     /// </summary>
     public class SpawnManager
     {
         /// <summary>
-        /// Gets the number of respawn waves which must occur before considering UIU to spawn.
+        /// Gets the number of respawn waves which must occur before considering Nu-7 to spawn.
         /// </summary>
-        [Description("How many mtfs respawns must have happened to spawn UIU")]
+        [Description("How many mtfs respawns must have happened to spawn Nu-7")]
         public int Respawns { get; private set; } = 1;
 
         /// <summary>
-        /// Gets the chance for UIU to spawn instead of NTF.
+        /// Gets the chance for Nu-7 to spawn instead of NTF.
         /// </summary>
-        [Description("Probability of a UIU Squad replacing a MTF spawn")]
-        public int Probability { get; private set; } = 50;
+        [Description("Probability of a Nu-7 Squad replacing a MTF spawn")]
+        public int Probability { get; private set; } = 20;
 
         /// <summary>
-        /// Gets the maximum size of a UIU squad.
+        /// Gets the maximum size of a Nu-7 squad.
         /// </summary>
-        [Description("The maximum size of a UIU squad")]
-        public uint MaxSquad { get; private set; } = 8;
+        [Description("The maximum size of a Nu-7 squad")]
+        public uint MaxSquad { get; private set; } = 20;
 
         /// <summary>
-        /// Gets the UIU spawn position.
+        /// Gets the Nu-7 spawn position.
         /// </summary>
-        [Description("UIU Rescue squad spawn position:")]
-        public Vector3 SpawnPos { get; private set; } = new Vector3(170f, 985f, 29f);
+        [Description("Nu-7 squad spawn position:")]
+        public Vector3 SpawnPos { get; private set; } = new Vector3(69.846f, 994.04f, -48.71f);
 
         /// <summary>
-        /// Gets the UIU announcement message.
+        /// Gets the Nu-7 announcement message.
         /// </summary>
         [Description("Entrance broadcast announcement message (null to disable it)")]
         public string AnnouncementText { get; private set; } = string.Empty;
 
         /// <summary>
-        /// Gets the UIU announcement message display time.
+        /// Gets the Nu-7 announcement message display time.
         /// </summary>
         [Description("Entrance broadcast announcement message time")]
         public ushort AnnouncementTime { get; private set; } = 10;
 
         /// <summary>
-        /// Gets the UIU Cassie entrance message.
+        /// Gets the Nu-7 Cassie entrance message.
         /// </summary>
-        [Description("UIU entrance Cassie Message")]
-        public string UiuAnnouncementCassie { get; private set; } = "The U I U Squad designated {designation} HasEntered AwaitingRecontainment {scpnum}";
+        [Description("Nu-7 entrance Cassie Message")]
+        public string UiuAnnouncementCassie { get; private set; } = "MTFUnit Nu - 7 designated Hammer .g2 .g5 .g3 .g2 Down Unit {designation} HasEntered . AllRemaining . AwaitingRecontainment {scpnum}";
 
         /// <summary>
-        /// Gets the UIU Cassie entrance message, when there aren't any SCPs.
+        /// Gets the Nu-7 Cassie entrance message, when there aren't any SCPs.
         /// </summary>
-        public string UiuAnnouncmentCassieNoScp { get; private set; } = "The U I U Squad designated {designation} HasEntered NoSCPsLeft";
+        public string UiuAnnouncmentCassieNoScp { get; private set; } = "MTFUnit Nu - 7 Designated Hammer .g2 .g4 .g1 Down Unit {designation} HasEntered . AllRemaining . NoSCPsLeft";
 
         /// <summary>
         /// Gets the custom NTF Cassie entrance message.
@@ -85,15 +85,15 @@
         public bool UseHints { get; private set; } = false;
 
         /// <summary>
-        /// Gets an UIU spawn broadcast.
+        /// Gets an Nu-7 spawn broadcast.
         /// </summary>
-        [Description("UIU Player broadcast (null to disable it)")]
-        public string UiuBroadcast { get; private set; } = "<i>You are an</i><color=yellow><b> UIU trooper</b></color>, <i>help </i><color=#0377fc><b>MTFs</b></color><i> to finish its job</i>";
+        [Description("Nu-7 Player broadcast (null to disable it)")]
+        public string UiuBroadcast { get; private set; } = sring.Empty;
 
         /// <summary>
-        /// Gets an UIU spawn broadcast time.
+        /// Gets an Nu-7 spawn broadcast time.
         /// </summary>
-        [Description("UIU Player broadcast time")]
+        [Description("Nu-7 Player broadcast time")]
         public ushort UiuBroadcastTime { get; private set; } = 10;
     }
 }
