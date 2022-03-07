@@ -1,4 +1,4 @@
-﻿namespace UIURescueSquad.Configs
+namespace MtfUnitNu7.Configs
 {
     using System.ComponentModel;
     using Exiled.API.Interfaces;
@@ -20,26 +20,26 @@
         /// <summary>
         /// Gets a <see cref="SpawnManager"/> configs.
         /// </summary>
-        [Description("Options for UIU spawn:")]
+        [Description("Options for Nu7 spawn:")]
         public SpawnManager SpawnManager { get; private set; } = new SpawnManager();
 
         /// <summary>
-        /// Gets a <see cref="UiuLeader"/> configs.
+        /// Gets a <see cref="Nu7Commander"/> configs.
         /// </summary>
-        [Description("Options for UIU Leader:")]
-        public UiuLeader UiuLeader { get; private set; } = new UiuLeader();
+        [Description("Options for Nu7 Captain:")]
+        public Nu7Commander Nu7Commander { get; private set; } = new Nu7Commander();
 
         /// <summary>
-        /// Gets a <see cref="UiuAgent"/> configs.
+        /// Gets a <see cref="Nu7Soilder"/> configs.
         /// </summary>
-        [Description("Options for UIU Agent:")]
-        public UiuAgent UiuAgent { get; private set; } = new UiuAgent();
+        [Description("Options for Nu7 Soilder:")]
+        public Nu7Soilder Nu7Soilder { get; private set; } = new Nu7Soilder();
 
         /// <summary>
-        /// Gets a <see cref="UiuSoldier"/> configs.
+        /// Gets a <see cref="Nu7Combative"/> configs.
         /// </summary>
-        [Description("Options for UIU Soldier:")]
-        public UiuSoldier UiuSoldier { get; private set; } = new UiuSoldier();
+        [Description("Options for Nu7 Combative:")]
+        public Nu7Combative Nu7Combative { get; private set; } = new Nu7Combative();
 
         /// <summary>
         /// Gets a <see cref="TeamColors"/> configs.
@@ -50,7 +50,7 @@
         /// <summary>
         /// Gets a <see cref="SupplyDrop"/> configs.
         /// </summary>
-        [Description("Option for UIU supply drop:")]
+        [Description("Option for Nu7 supply drop:")]
         public SupplyDrop SupplyDrop { get; private set; } = new SupplyDrop();
     }
 }
