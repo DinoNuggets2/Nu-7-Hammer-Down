@@ -1,4 +1,4 @@
-﻿namespace UIURescueSquad.Configs.SubConfigs
+namespace MtfUnitNu7.Configs.SubConfigs
 {
     using System.ComponentModel;
 
@@ -20,7 +20,7 @@
         public string NtfUnitColor { get; private set; } = "#0887E5";
 
         /// <summary>
-        /// Gets custom color for UIU units.
+        /// Gets custom color for Nu7 units.
         /// </summary>
         [Description("Custom UIU color (leave empty for default color)")]
         public string UiuUnitColor { get; private set; } = "yellow";
